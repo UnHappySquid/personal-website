@@ -48,7 +48,7 @@ button:focus {
 
 header {
 	background-color: var(--col_1);
-	width: 100%;
+	width: 100vw;
 	position: fixed;
 	z-index: 1000;
 }
@@ -79,6 +79,8 @@ header {
 
 
 	nav {
+		padding: 1rem;
+		box-sizing: border-box;
 		width: 400px;
 	}
 
@@ -105,7 +107,7 @@ header {
 
 main {
 	padding-top: var(--header_height);
-	font-size: var(--font_h1);
+	/* font-size: var(--font_h1); */
 	scroll-snap-type: mandatory;
 
 	.page {
@@ -118,7 +120,7 @@ main {
 		flex-wrap: wrap;
 
 		div {
-			min-height: 90vh;
+			min-height: calc(100vh - var(--header_height));
 		}
 	}
 
@@ -229,7 +231,7 @@ main {
 		padding: 2rem;
 		box-sizing: border-box;
 		width: 100%;
-		min-height: 100vh;
+		height: calc(100vh - var(--header_height));
 
 		top: var(--header_height);
 		background-color: var(--col_1);
@@ -241,7 +243,7 @@ main {
 
 
 			.project_body {
-				width: clamp(300px, 80%, 1500px);
+				width: clamp(300px, 100%, 1500px);
 
 				img {
 					align-self: center;
@@ -249,6 +251,7 @@ main {
 					max-height: 60vh;
 					border-radius: 20px;
 					object-fit: cover;
+					padding-bottom: 1rem;
 				}
 
 				.project_body_title {
@@ -256,6 +259,7 @@ main {
 					margin-bottom: 1rem;
 					justify-content: space-between;
 					align-content: center;
+					gap: 1rem;
 
 					a {
 						align-self: center;
@@ -264,7 +268,7 @@ main {
 
 				.project_deets_deets {
 					height: 80%;
-					overflow-y: scroll;
+					overflow-y: scroll !important;
 
 					/* font-size: var(--font_p); */
 					font-size: 1rem;
@@ -278,7 +282,7 @@ main {
 		}
 
 		button {
-			font-size: 10vh;
+			font-size: 100px;
 			cursor: pointer;
 			display: block;
 		}
@@ -287,12 +291,11 @@ main {
 
 	.project_deets[open="True"] {
 		display: block;
-		overflow-block: scroll;
+		overflow-block: auto;
 	}
 
 	.project_deets[open="False"] {
 		display: none;
-		overflow-block: unset;
 	}
 
 	#end {
@@ -329,4 +332,65 @@ main {
 	}
 
 
+}
+
+@media screen and (max-width: 480px) {
+	/* :root { */
+	/* 	--header_height: 100px; */
+	/* } */
+
+	#top-bar {
+		width: 100vw;
+
+		nav {
+			width: 50vw;
+		}
+	}
+
+	main {
+		#hero {
+			#img_container {
+				min-width: 95vw;
+			}
+
+			#greetings_container {
+				width: 100vw;
+			}
+		}
+
+		#projects {
+			#projects_listing {
+				padding: 1rem;
+				box-sizing: border-box;
+				width: 100vw;
+
+				.project {
+					width: 100%;
+
+					.project_image {
+						min-width: unset;
+						min-height: unset;
+					}
+				}
+			}
+		}
+
+		.project_deets {
+			.project_deets_container {
+				width: 100%;
+				flex-direction: column;
+
+				.project_body {
+					.project_body_title {
+						width: 100%;
+						flex-direction: column;
+
+					}
+				}
+
+
+			}
+
+		}
+	}
 }
