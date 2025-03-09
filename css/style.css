@@ -243,7 +243,7 @@ main {
 
 
 			.project_body {
-				width: clamp(300px, 100%, 1500px);
+				width: clamp(300px, 100%, 50rem);
 
 				img {
 					align-self: center;
@@ -273,8 +273,14 @@ main {
 					/* font-size: var(--font_p); */
 					font-size: 1rem;
 
+					a {
+						text-decoration: underline;
+						color: aliceblue;
+					}
+
 					ul {
 						list-style-type: disc;
+						list-style-position: inside;
 					}
 
 				}

@@ -148,40 +148,111 @@
 
 					</div>
 					<div class="project_deets_deets">
-						<p>
-							As the Software Lead for the McGill Robotics Drone Project, I
-							design and
-							implement mission-critical software for autonomous UAVs,
-							focusing on
-							navigation, object detection, and PX4 integration. Leading a
-							team of
-							developers, I contribute to:</p>
-						<ul>
+						As the drone division of the McGill Robotics Club, our objective is to
+						design and develop an autonomous drone to compete in the 2025 <a
+							href="https://suas-competition.org/">SUAS
+							competition</a> . The mission requires the
+						drone to autonomously perform a series of complex tasks within strict
+						constraints. Initially, the drone must autonomously take off and
+						navigate through 10 predetermined waypoints, maintaining course within
+						the designated mission boundaries while actively avoiding obstacles such
+						as trees and another UAV operating simultaneously in the same airspace.
 
-							<li>Real-time Flight Software – Developing algorithms in C++ and
-								Python
-								to enable autonomous navigation and obstacle avoidance.
+						After navigating these waypoints, the drone is tasked with autonomously
+						locating and identifying targets placed in a designated area on the
+						ground. These targets may include:
+						<ul>
+							<li>Person/Mannequin</li>
+							<li>Car (&gt;1:8 scale model)</li>
+							<li>Motorcycle (&gt;1:8 scale model)</li>
+							<li>Airplane (&gt;3m wingspan model)</li>
+							<li>Bus (&gt;1:8 scale model)</li>
+							<li>Boat (&gt;1:8 scale model)</li>
+							<li>Stop Sign (flat, upwards-facing)</li>
+							<li>Snowboard</li>
+							<li>Umbrella</li>
+							<li>Sports Ball (soccer, basketball, volleyball, or football)
 							</li>
-							<li>Computer Vision & AI – Implementing computer vision
-								pipelines for
-								target detection using OpenCV and deep learning models.
-							</li>
-							<li>PX4 & ROS Integration – Configuring and optimizing flight
-								control
-								systems using PX4, ROS 2, and MAVLink.</li>
-							<li>System Architecture & Mentorship – Leading team meetings,
-								mentoring
-								junior members, and ensuring robust software development
-								practices.</li>
+							<li>Baseball Bat</li>
+							<li>Bed/Mattress (larger than twin size)</li>
+							<li>Tennis Racket</li>
+							<li>Suitcase</li>
+							<li>Skis</li>
 						</ul>
 						<p>
-							This project has sharpened my expertise in robotics, embedded
-							systems,
+							Once the drone identifies the specified target, it must perform
+							a
+							precise water-bottle airdrop directly onto it. This waypoint
+							identification and payload delivery must be repeated a total of
+							four
+							times. Following successful completion, the drone must
+							autonomously
+							return and safely land at its initial takeoff point. The entire
+							mission
+							must be completed within a 30-minute time limit, which demands
+							careful
+							management of energy resources.
+						</p>
+						<p>
+							To effectively meet these demanding criteria, our team decided
+							to
+							develop a Vertical Take-Off and Landing (VTOL) aircraft, which
+							combines
+							the agility and maneuverability of a quadcopter with the speed
 							and
-							AI-powered autonomy, preparing me for cutting-edge work in
-							aerospace,
-							AI, and
-							automation.</p>
+							endurance advantages of fixed-wing flight. This hybrid design
+							introduces
+							considerable complexity, particularly in software management of
+							the
+							flight transitions between quadcopter and fixed-wing modes.
+						</p>
+						<p>
+							Throughout the project, our team conducted extensive requirement
+							elicitation and detailed system design, resulting in a
+							comprehensive
+							architecture represented by a ROS2 node graph:
+						</p>
+						<br>
+						<img src="./media/ros_nodes.png" alt="ros nodes graph">
+						<p>
+							Currently, our progress includes completing the drone’s flight
+							controller node in C++, as well as portions of the mapping
+							nodes. Given
+							my substantial prior experience with the PX4 flight controller
+							firmware—acquired through extensive documentation research
+							during last
+							year's competition—I developed the controller in C++ to ensure
+							optimal
+							real-time performance on our constrained onboard computer, the
+							Jetson
+							Orin Nano. This choice marked a deliberate departure from the
+							previous
+							year's Python implementation, which proved inadequate for the
+							system's
+							real-time demands. Despite the complexity introduced by
+							transitioning
+							from a pure quadcopter to a hybrid VTOL system, our iterative
+							development process, rigorous testing, and perseverance have
+							resulted in
+							a robust and reliable flight controller.
+						</p>
+						<p>
+							Parallel to the flight software development, other team members
+							have
+							been generating a custom dataset for training and fine-tuning
+							the
+							drone’s computer vision models. Utilizing Blender’s scripting
+							capabilities, this dataset aims to provide accurate recognition
+							and
+							classification of the diverse targets listed above.
+						</p>
+						<p>
+							As this project is ongoing, further developments are
+							anticipated. For
+							reference, additional information on the drone built for the
+							2024
+							competition, which shares similar goals, can be consulted.
+						</p>
 					</div>
 
 				</div>
