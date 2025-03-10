@@ -273,14 +273,33 @@ main {
 					/* font-size: var(--font_p); */
 					font-size: 1rem;
 
+					img {
+						object-fit: contain;
+					}
+
+					p {
+						margin-bottom: 1rem;
+					}
+
 					a {
 						text-decoration: underline;
 						color: aliceblue;
 					}
 
+
+					ul,
+					ol {
+						list-style-position: inside;
+						margin-bottom: 1rem;
+
+						ul,
+						ol {
+							margin-left: 1rem;
+						}
+					}
+
 					ul {
 						list-style-type: disc;
-						list-style-position: inside;
 					}
 
 				}

@@ -78,11 +78,11 @@
 					</div>
 
 				</button>
-				<button class="project">
+				<button class="project" onclick="openDesc('chill_guy_ai')">
 					<img class="project_image" src="media/chill_guy_ai.jpg"
 						alt="Chill Guy ChatBot"></img>
 					<div class="project_header">
-						<h2 class="project_title">Chill guy Chatbot</h2>
+						<h2 class="project_title">Chill Guy Chatbot</h2>
 					</div>
 
 				</button>
@@ -148,19 +148,28 @@
 
 					</div>
 					<div class="project_deets_deets">
-						As the drone division of the McGill Robotics Club, our objective is to
-						design and develop an autonomous drone to compete in the 2025 <a
-							href="https://suas-competition.org/">SUAS
-							competition</a> . The mission requires the
-						drone to autonomously perform a series of complex tasks within strict
-						constraints. Initially, the drone must autonomously take off and
-						navigate through 10 predetermined waypoints, maintaining course within
-						the designated mission boundaries while actively avoiding obstacles such
-						as trees and another UAV operating simultaneously in the same airspace.
-
-						After navigating these waypoints, the drone is tasked with autonomously
-						locating and identifying targets placed in a designated area on the
-						ground. These targets may include:
+						<p>
+							As the drone division of the McGill Robotics Club, our objective
+							is to
+							design and develop an autonomous drone to compete in the 2025 <a
+								href="https://suas-competition.org/">SUAS
+								competition</a> . The mission requires the
+							drone to autonomously perform a series of complex tasks within
+							strict
+							constraints. Initially, the drone must autonomously take off and
+							navigate through 10 predetermined waypoints, maintaining course
+							within
+							the designated mission boundaries while actively avoiding
+							obstacles such
+							as trees and another UAV operating simultaneously in the same
+							airspace.
+						</p>
+						<p>
+							After navigating these waypoints, the drone is tasked with
+							autonomously
+							locating and identifying targets placed in a designated area on
+							the
+							ground. These targets may include:</p>
 						<ul>
 							<li>Person/Mannequin</li>
 							<li>Car (&gt;1:8 scale model)</li>
@@ -261,6 +270,155 @@
 
 		</section>
 
+		<section id="chill_guy_ai" class="project_deets" open="False">
+			<div class="project_deets_container">
+				<div class="project_sidebar">
+					<button type="button" onclick="closeDesc('chill_guy_ai')"> <i
+							class="fa fa-arrow-circle-left"></i></button>
+				</div>
+				<div class="project_body">
+					<img src="media/chill_guy_ai.jpg" alt="chill guy ai "></img>
+					<div class="project_body_title">
+						<div>
+
+							<h2>Chill Guy Chatbot</h2>
+						</div>
+						<a href="https://github.com/UnHappySquid/ChillGuysAI">
+							<svg width="64px" height="64px" viewBox="0 0 20 20"
+								version="1.1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								fill="#ffffff">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+									stroke-linejoin="round">
+								</g>
+								<g id="SVGRepo_iconCarrier">
+									<title>github [#142]</title>
+									<desc>Created with Sketch.</desc>
+									<defs> </defs>
+									<g id="Page-1" stroke="none" stroke-width="1"
+										fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview"
+											transform="translate(-140.000000, -7559.000000)"
+											fill="#ffffff">
+											<g id="icons"
+												transform="translate(56.000000, 160.000000)">
+												<path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+													id="github-[#142]">
+												</path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</a>
+
+					</div>
+					<div class="project_deets_deets">
+						<p>
+							For The CodeJam 14 hackathon, we tackled the challenge outlined
+							in <a href="https://github.com/Matador-AI/Codejam14">this
+								repository</a>, which required us to develop an AI
+							chatbot capable of assisting customers in finding cars based on
+							their preferences. The goal was to create an engaging and
+							efficient chatbot that could retrieve and process relevant car
+							listings while maintaining a distinct personality.
+						</p>
+						<h3>Project Breakdown</h3>
+						<p>Our team of two split responsibilities: I focused on developing the
+							backend AI chatbot, while my teammate handled the frontend and
+							server endpoints. To achieve our goal of a chatbot capable of
+							retrieving relevant data, I needed to research retrieval methods
+							and discovered Retrieval-Augmented Generation (RAG).</p>
+						<h3>Implementing Retrieval-Augmented Generation (RAG)</h3>
+						<p>RAG is a framework that enhances a language model’s responses by
+							retrieving relevant data from an external knowledge base before
+							generating an answer. This was ideal for our chatbot, as it
+							allowed us to dynamically fetch relevant car listings rather
+							than relying solely on pre-trained knowledge, reducing
+							hallucination and improving response accuracy.</p>
+						<h3>Creating the ChillGuy Personality</h3>
+						<p>Beyond functionality, we wanted our chatbot to embody the personality
+							of the 'My New Character' meme—relaxed, easygoing, and
+							nonchalant. This required careful prompt engineering to ensure
+							the AI’s tone remained in line with this persona.</p>
+						<h3>Challenges and Solutions</h3>
+						<p>One key decision was to avoid reliance on external APIs like OpenAI’s
+							models or Pinecone’s vector database. Instead, I opted for
+							open-source models and self-hosted vector search to ensure
+							independence and scalability. This led me to LangChain, a
+							framework designed for building AI-powered applications with
+							composable modules.</p>
+						<h3>Why LangChain?</h3>
+						<p>LangChain provided the necessary tools to:</p>
+						<ul>
+							<li>Integrate local models via Ollama, which simplified running
+								LLaMA models—the best available open-source LLM at the
+								time.</li>
+							<li>Utilize ChromaDB, a built-in local vector database for
+								storing and searching embeddings.</li>
+							<li>Enable retrieval-based augmentation, allowing us to
+								dynamically fetch relevant car listings based on user
+								queries.</li>
+						</ul>
+						<h3>Implementing the AI Backend</h3>
+						<p>The chatbot's prompt structure consisted of four key components:</p>
+						<ol>
+							<li>System Prompt – Defined the chatbot’s goal and personality.
+							</li>
+							<li>Relevant Cars – A dynamic section populated through vector
+								similarity search.</li>
+							<li>Past Conversation History – Provided context by tracking
+								previous interactions.</li>
+							<li>Current User Prompt – The latest user query.</li>
+						</ol>
+						<p>The challenge was in populating the 'Relevant Cars' section
+							effectively. To achieve this:</p>
+						<ul>
+							<li>Each car listing was converted into a document, embedded
+								into a vector, and stored in ChromaDB.</li>
+							<li>At query time, we performed vector similarity search,
+								retrieving cars with embeddings closest to the user’s
+								query.</li>
+							<li>However, with 100,000 cars, each having 30+ attributes,
+								embedding everything was computationally expensive. To
+								meet the hackathon deadline, we:
+								<ul>
+									<li>Reduced the fields per car to 10 (e.g.,
+										seats, condition, model, make).</li>
+									<li>Moved computations to a Google Cloud Compute
+										Engine with a powerful GPU.</li>
+									<li>Optimized embeddings, reducing processing
+										time from 10 minutes per 1,000 cars to
+										embedding all cars in 30 minutes.</li>
+								</ul>
+							</li>
+						</ul>
+						<h3>Final Submission & Lessons Learned</h3>
+						<p>While our chatbot functioned, it occasionally hallucinated. Given
+							more time, we could have improved its accuracy by:</p>
+						<ul>
+							<li>Combining vector search with keyword search for better
+								retrieval.</li>
+							<li>Filtering duplicate car listings.</li>
+							<li>Implementing a judge model to validate retrieved results
+								before inclusion in the prompt.</li>
+						</ul>
+						<p>Despite starting just 24 hours before the deadline (out of the
+							allotted 50 hours) and being a team of two instead of four, we
+							successfully built and deployed the chatbot. Our final
+							submission is available here: <a
+								href="https://devpost.com/software/chill-guy-chatbot">ChillGuy
+								Chatbot</a>.</p>
+						<p>This project was a deep dive into retrieval-augmented generation,
+							prompt engineering, and AI system design, and served as a
+							valuable learning experience in developing agentic AI models
+							using open-source tools.</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
 		<section id="end" class="page">
 			<div id="contact" class="half-page">
 				<h2>Contact</h2>
