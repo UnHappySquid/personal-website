@@ -229,6 +229,7 @@ main {
 		display: none;
 		position: fixed;
 		padding: 2rem;
+		padding-bottom: 25vh;
 		box-sizing: border-box;
 		width: 100%;
 		height: calc(100vh - var(--header_height));
@@ -268,7 +269,6 @@ main {
 
 				.project_deets_deets {
 					height: 80%;
-					overflow-y: scroll !important;
 
 					/* font-size: var(--font_p); */
 					font-size: 1rem;
@@ -300,6 +300,10 @@ main {
 
 					ul {
 						list-style-type: disc;
+					}
+
+					li {
+						margin-bottom: 0.5rem;
 					}
 
 				}
@@ -417,5 +421,21 @@ main {
 			}
 
 		}
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--col_1);
+	padding: 2rem;
+	width: 100vw;
+	height: var(--header_height);
+	box-sizing: border-box;
+	color: var(--col_2);
+
+	a {
+		text-decoration-line: underline;
 	}
 }

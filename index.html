@@ -86,7 +86,7 @@
 					</div>
 
 				</button>
-				<button class="project">
+				<button class="project" onclick="openDesc('autonomous_drone_2024')">
 					<img class="project_image" src="media/drone_2024_720_cropped.png"
 						alt="McGill robotics drone 2024"></img>
 					<div class="project_header">
@@ -419,6 +419,205 @@
 			</div>
 
 		</section>
+
+		<section id="autonomous_drone_2024" class="project_deets" open="False">
+			<div class="project_deets_container">
+				<div class="project_sidebar">
+					<button type="button" onclick="closeDesc('autonomous_drone_2024')"> <i
+							class="fa fa-arrow-circle-left"></i></button>
+				</div>
+				<div class="project_body">
+					<img src="media/drone_2024_720_cropped.png" alt="autonomous drone 2024"></img>
+					<div class="project_body_title">
+						<div>
+
+							<h2>Autonomous Drone 2024</h2>
+						</div>
+						<a href="https://github.com/mcgill-robotics/drone-2024">
+							<svg width="64px" height="64px" viewBox="0 0 20 20"
+								version="1.1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								fill="#ffffff">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+									stroke-linejoin="round">
+								</g>
+								<g id="SVGRepo_iconCarrier">
+									<title>github [#142]</title>
+									<desc>Created with Sketch.</desc>
+									<defs> </defs>
+									<g id="Page-1" stroke="none" stroke-width="1"
+										fill="none" fill-rule="evenodd">
+										<g id="Dribbble-Light-Preview"
+											transform="translate(-140.000000, -7559.000000)"
+											fill="#ffffff">
+											<g id="icons"
+												transform="translate(56.000000, 160.000000)">
+												<path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+													id="github-[#142]">
+												</path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</a>
+
+					</div>
+					<div class="project_deets_deets">
+						<p>As part of the McGill Robotics Club, our team was tasked with
+							developing an autonomous drone for the SUAS Competition 2024 (<a
+								href="https://suas-competition.org/">SUAS Website</a>).
+							This competition fosters interest in Unmanned Aerial Systems
+							(UAS) and requires teams to design a fully autonomous drone
+							capable of performing complex aerial missions.</p>
+						<h3>Competition Requirements & Constraints</h3>
+						<p>The competition involved designing a drone that could autonomously:
+						</p>
+						<ul>
+							<li>Take off and navigate through 10 waypoints while remaining
+								within a defined mission boundary.</li>
+							<li>Identify and classify targets—either a mannequin or a paper
+								cutout of a shape containing a letter, where the
+								combination of shape and letter colors uniquely
+								identified the target.</li>
+							<li>Perform four precise airdrops, matching each airdrop payload
+								(a water bottle) to its designated target.</li>
+							<li>
+								Adhere to flight constraints:
+								<ul>
+									<li>Maintain an altitude between 50 to 400 feet
+										Above Ground Level (AGL).</li>
+									<li>Complete the mission within 30 minutes.</li>
+									<li>Operate with a maximum of two human
+										operators to avoid penalties.</li>
+								</ul>
+							</li>
+						</ul>
+						<p>Given these constraints, the team initially planned a VTOL (Vertical
+							Takeoff and Landing) drone to maximize endurance and efficiency,
+							allowing for long-range waypoint navigation while maintaining
+							precise control during takeoff, landing, and airdrops.</p>
+						<h3>Leadership Challenges & Project Restart</h3>
+						<p>The project struggled early on due to the absence of a software lead,
+							leaving the team without clear direction and resulting in
+							significant member attrition. As one of the more experienced
+							developers remaining, I was asked to step in as software lead.
+							However, I had never worked under a lead before, making it
+							difficult to structure the team's efforts effectively.</p>
+						<p>Additionally, midterms and finals led to decreased participation,
+							with most of the software team only completing ROS2 tutorials
+							without writing any actual code. While the tutorials were
+							intended to build familiarity with ROS2, many members struggled
+							to translate that knowledge into practical implementation,
+							leading to stagnation in development. By the end of winter
+							break, the project lacked both a working codebase and a clear
+							design.</p>
+						<p>To address this, I applied requirement elicitation techniques from my
+							software engineering class, analyzing the rulebook to create:
+						</p>
+						<ol>
+							<li>An environment model</li>
+							<li>A domain model</li>
+							<li>A concept model (see below)</li>
+						</ol>
+						<img src="media/concept_model_drone_2024.png"
+							alt="autonomous drone 2024 concept model">
+						<p>With a structured plan in place, I reassigned tasks. However, many
+							team members lacked confidence, struggled with the complexity of
+							their assignments, and were unsure how to proceed. Some had
+							difficulty applying theoretical knowledge to practical
+							implementation, while others felt overwhelmed by the project
+							scope, leading to delays in task completion. Over time, I had to
+							take on the majority of the software development myself, as
+							unreliable contributions were delaying progress.</p>
+						<h3>Adapting Scope & System Design</h3>
+						<p>With competition two months away, we faced a major constraint—VTOL
+							functionality was not feasible in time due to a combination of
+							technical complexity, lack of prior experience with VTOL
+							systems, and the time required to integrate and test the
+							transition between quadcopter and fixed-wing flight. We pivoted
+							to a quadcopter-only approach, requiring a rapid software
+							redesign. I created a <a
+								href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html#understanding-nodes">ROS2
+								node architecture</a> to handle mission
+							execution:</p>
+						<img src="media/ROS2_node_diagram_drone_2024.png"
+							alt="autonomous drone 2024 ros diagram">
+						<h3>ROS2 Node Architecture</h3>
+						<p>The architecture consisted of the following key nodes:</p>
+						<ol>
+							<li>Offboard Node - Implements an action queue (takeoff, land,
+								waypoint navigation) and abstracts communication with
+								the PX4 flight controller, simplifying interactions for
+								other nodes. This setup streamlined command execution
+								and drone state monitoring but restricted us to
+								quadcopter mode because MicroXRCE, a module that exposes
+								PX4's internal pub-sub topics as ROS topics, lacked
+								support for VTOL transitions.</li>
+							<li>Local Planner (VFH+) - A Vector Field Histogram Plus (VFH+)
+								planner for navigating towards waypoints while avoiding
+								mission boundary violations. Originally designed for
+								obstacle avoidance, but due to hardware
+								limitations—specifically, the lack of suitable onboard
+								sensors and insufficient processing power to handle
+								real-time obstacle detection—we had to disable this
+								functionality.</li>
+							<li>Mission Node - A finite state machine that managed mission
+								execution by determining the sequence and logic of topic
+								publications for each mission state. It acted as the
+								central controller, orchestrating the entire drone
+								operation. The possible states included WAITING,
+								PERFORMING_LAP, SURVEY_AREA, PERFORMING_AIRDROP, and RTH
+								(Return to Home). Additionally, this was the primary
+								node that users interacted with to set mission
+								parameters and initiate the mission start signal.</li>
+							<li>
+								Dummy CV (Computer Vision Node) - Handled target
+								identification during the survey phase using two YOLOv8
+								models:
+								<ul>
+									<li>One model detected shapes and letters, while
+										the other was used for mannequins.</li>
+									<li>The color detection is done through various
+										OpenCV utilities and the HSV color
+										space.</li>
+									<li>Once a target was identified, its ground
+										position was calculated and sent to the
+										mission node.</li>
+								</ul>
+							</li>
+							<li>Airdrop Controller (Micro ROS Node) - Ran on an Arduino Due,
+								responsible for controlling the airdrop mechanism via
+								ROS commands. It supported arming and releasing payloads
+								on specific hubs.</li>
+						</ol>
+						<h3>Competition Outcome & Lessons Learned</h3>
+						<p>Despite numerous hurdles, we competed for the first time in four
+							years. This was made possible by our ability to rapidly adapt to
+							new constraints, streamline our mission scope, and dedicate
+							intense effort in the final months to ensure a functional system
+							was ready for competition. While we faced challenges in
+							execution, given it was our first full-scale attempt, we gained
+							valuable experience and insights for future competitions, we won
+							the Tenacity Award for persevering through the challenges. This
+							experience provided valuable insights into team leadership,
+							rapid prototyping, and real-world autonomous system development.
+							One key lesson was the importance of structured
+							leadership—having a clear roadmap and assigning tasks
+							effectively can make or break a project. Additionally, we
+							learned that adaptability is crucial; simplifying our approach
+							and pivoting to a quadcopter-only design allowed us to meet
+							deadlines and still deliver a functional system. This trade-off
+							sacrificed endurance and speed but significantly improved system
+							stability and reduced integration complexity, making it a more
+							viable solution within the competition’s constraints.</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
 		<section id="end" class="page">
 			<div id="contact" class="half-page">
 				<h2>Contact</h2>
@@ -473,6 +672,11 @@
 			</div>
 		</section>
 	</main>
+
+	<footer>
+		<p>This website's html, css and images can be found under this <a
+				href="https://github.com/UnHappySquid/personal-website">GitHub repository</a></p>
+	</footer>
 </body>
 
 </html>
