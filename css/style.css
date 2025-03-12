@@ -3,6 +3,7 @@
 	--col_2: white;
 	--col_3: #3B05FF;
 	--col_4: #FE9947;
+	--view-height: 1vh;
 
 	--header_height: 100px;
 
@@ -111,20 +112,20 @@ main {
 
 	.page {
 		/* width: 100%; */
-		min-height: 100lvh;
+		min-height: calc(100 * var(--view-height));
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		flex-wrap: wrap;
 
 		div {
-			min-height: calc(100lvh - var(--header_height));
+			min-height: calc(calc(100 * var(--view-height)) - var(--header_height));
 		}
 	}
 
 
 	#hero {
-		background: radial-gradient(circle 100lvh at center bottom, var(--col_4), var(--col_3));
+		background: radial-gradient(circle calc(100 * var(--view-height)) at center bottom, var(--col_4), var(--col_3));
 
 		div {
 			width: 49%;
@@ -159,7 +160,7 @@ main {
 	}
 
 	#projects {
-		background: radial-gradient(circle 100lvh at center top, var(--col_4), var(--col_3));
+		background: radial-gradient(circle calc(100 * var(--view-height)) at center top, var(--col_4), var(--col_3));
 
 		div {
 			display: flex;
@@ -227,10 +228,10 @@ main {
 		display: none;
 		position: fixed;
 		padding: 2rem;
-		padding-bottom: 25lvh;
+		padding-bottom: calc(25 * var(--view-height));
 		box-sizing: border-box;
 		width: 100%;
-		height: calc(100lvh - var(--header_height));
+		height: calc(calc(100 * var(--view-height)) - var(--header_height));
 
 		top: var(--header_height);
 		background-color: var(--col_1);
@@ -247,7 +248,7 @@ main {
 				img {
 					align-self: center;
 					width: 100%;
-					max-height: 60lvh;
+					max-height: calc(60 * var(--view-height));
 					border-radius: 20px;
 					object-fit: cover;
 					padding-bottom: 1rem;
@@ -362,9 +363,9 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-	/* :root { */
-	/* 	--header_height: 100px; */
-	/* } */
+	:root {
+		--view-height: calc(1000px / 100);
+	}
 
 	#top-bar {
 		width: 100vw;
