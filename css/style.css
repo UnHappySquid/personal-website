@@ -65,6 +65,7 @@ header {
 		box-sizing: border-box;
 
 		img {
+			aspect-ratio: 1 / 1;
 			background-color: var(--col_3);
 			border-radius: 50%;
 			border-color: var(--col_2);
