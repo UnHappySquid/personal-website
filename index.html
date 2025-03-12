@@ -666,7 +666,84 @@
 
 					</div>
 					<div class="project_deets_deets">
+						<p>As part of a year-long software engineering project class, our team
+							of seven was tasked with developing an online multiplayer
+							adaptation of Splendor, a turn-based competitive strategy card
+							game. The project followed a structured development process with
+							several milestones, culminating in a fully functional
+							multiplayer game with a 92% final grade.</p>
+						<h3>Project Scope & Technology Stack</h3>
+						<p>We implemented the game using Java with the following technologies:
+						</p>
+						<ul>
+							<li>Backend: Spring Boot (RESTful API), PostgreSQL (database),
+								Docker (deployment), MVC architecture.</li>
+							<li>Frontend: JavaFX with FXGL (entity-component-based game
+								engine) for dynamic UI and interactive gameplay.</li>
+							<li>Networking: RESTful services to handle game sessions and
+								player interactions.</li>
+							<li>Deployment: Dockerized backend for consistent deployment
+								across environments.</li>
+						</ul>
+						<h3>Development Process & Key Contributions</h3>
+						<p>After completing early modeling milestones, our team began with the
+							frontend implementation. My primary task was to develop in-game
+							action prompts—a crucial component that involved handling 11
+							different types of prompts. Anticipating future expansions, I
+							implemented a Strategy Design Pattern, allowing for easy
+							scalability and adaptability as new game rules and prompt types
+							were introduced. This approach ensured a modular and
+							maintainable prompt-handling system.</p>
+						<p>For the backend, we set up Spring Boot and structured the codebase
+							using MVC (Model-View-Controller) to ensure maintainability. My
+							primary contributions included:</p>
+						<ul>
+							<li>Designing and implementing RESTful API endpoints for
+								client-server communication.</li>
 
+							<li>Parsing incoming requests, converting them into
+								backend-compatible models, and updating game state
+								accordingly.</li>
+
+							<li>Implementing long polling to synchronize the frontend with
+								real-time model changes.</li>
+
+							<li>Writing test cases to ensure 80%+ code coverage, following a
+								test-driven development (TDD) approach.</li>
+
+						</ul>
+						<h3>Challenges & Solutions</h3>
+						<p>Throughout the project, we faced several technical and organizational
+							challenges:</p>
+						<ul>
+							<li>Team Coordination & Task Management: Regular meetings were
+								held to align tasks, discuss progress, and tackle
+								complex features collaboratively.</li>
+
+							<li>Scalability & Maintainability: The use of Microservices
+								Architecture improved system modularity and performance.
+							</li>
+
+							<li>Secure User Authentication & Data Management: PostgreSQL
+								managed user information, including hashed credentials
+								and game session data.</li>
+
+							<li>Deployment Consistency: Docker was used to containerize the
+								backend, ensuring smooth deployment across different
+								environments.</li>
+						</ul>
+						<h3>Final Outcome & Lessons Learned</h3>
+						<p>For our final milestone, we successfully delivered a fully functional
+							multiplayer card game supporting real-time online play for at
+							least three concurrent players across separate machines. Our
+							implementation adhered to official Splendor game rules,
+							including turn-based mechanics, resource management, and victory
+							conditions.</p>
+						<p>This project reinforced my skills in collaborative software
+							development, system architecture design, RESTful API
+							development, and UI/UX implementation. It also validated my
+							passion for writing clean, maintainable code while working in a
+							team-driven environment.</p>
 					</div>
 				</div>
 			</div>
