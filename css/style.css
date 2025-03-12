@@ -11,6 +11,7 @@
 	--font_h1: 3.8rem;
 	--font-family: Instrument Sans, Arial, sans serif;
 	scroll-behavior: smooth;
+	background-color: var(--col_1);
 }
 
 * {
@@ -317,7 +318,7 @@ main {
 
 	.project_deets[open="True"] {
 		display: block;
-		overflow-block: auto;
+		overflow: scroll;
 	}
 
 	.project_deets[open="False"] {
