@@ -111,20 +111,20 @@ main {
 
 	.page {
 		/* width: 100%; */
-		min-height: 100vh;
+		min-height: 100lvh;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		flex-wrap: wrap;
 
 		div {
-			min-height: calc(100vh - var(--header_height));
+			min-height: calc(100lvh - var(--header_height));
 		}
 	}
 
 
 	#hero {
-		background: radial-gradient(circle 100vh at center bottom, var(--col_4), var(--col_3));
+		background: radial-gradient(circle 100lvh at center bottom, var(--col_4), var(--col_3));
 
 		div {
 			width: 49%;
@@ -159,7 +159,7 @@ main {
 	}
 
 	#projects {
-		background: radial-gradient(circle 100vh at center top, var(--col_4), var(--col_3));
+		background: radial-gradient(circle 100lvh at center top, var(--col_4), var(--col_3));
 
 		div {
 			display: flex;
@@ -200,9 +200,9 @@ main {
 				.project_image {
 					align-self: center;
 					min-width: 25rem;
-					width: 75vw;
+					width: 100%;
 					max-width: 50rem;
-					height: 40vh;
+					height: 100%;
 					object-fit: cover;
 					border-radius: 20px;
 				}
@@ -227,10 +227,10 @@ main {
 		display: none;
 		position: fixed;
 		padding: 2rem;
-		padding-bottom: 25vh;
+		padding-bottom: 25lvh;
 		box-sizing: border-box;
 		width: 100%;
-		height: calc(100vh - var(--header_height));
+		height: calc(100lvh - var(--header_height));
 
 		top: var(--header_height);
 		background-color: var(--col_1);
@@ -247,7 +247,7 @@ main {
 				img {
 					align-self: center;
 					width: 100%;
-					max-height: 60vh;
+					max-height: 60lvh;
 					border-radius: 20px;
 					object-fit: cover;
 					padding-bottom: 1rem;
