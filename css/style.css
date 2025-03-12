@@ -363,10 +363,9 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-	/* :root { */
-	/* 	--view-height: calc(1000px / 100); */
-	/* 	--view-height: 1lvh; */
-	/* } */
+	:root {
+		--view-height: calc(900px / 100);
+	}
 
 	#top-bar {
 		width: 100vw;
