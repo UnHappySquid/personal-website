@@ -22,6 +22,9 @@
 			document.getElementById(desc_id).attributes["open"].value = "False";
 			document.getElementsByTagName("body")[0].style.overflow = "unset";
 		}
+		document.addEventListener('resize', () => {
+			document.documentElement.style.setProperty('--view-height', window.screenY)
+		}, {once: true})
 	</script>
 </head>
 
